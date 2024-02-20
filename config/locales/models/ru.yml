@@ -19,8 +19,20 @@ ru:
         one:      Род
         other:    Рода
 
+      number:
+        one:      Число
+        other:    Числа
+
     attributes:
       gender:
+        de:       Немецкий
+        en:       Английский
+        ru:       Русский
+        abbr_de:  Немецкое сокращение
+        abbr_en:  Английское сокращение
+        abbr_ru:  Русское сокращение        
+
+      number:
         de:       Немецкий
         en:       Английский
         ru:       Русский

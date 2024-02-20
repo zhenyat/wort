@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_20_175250) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_20_191532) do
   create_table "genders", force: :cascade do |t|
     t.string "de", null: false
     t.string "en", null: false
@@ -26,6 +26,17 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_20_175250) do
     t.index ["de"], name: "index_genders_on_de", unique: true
     t.index ["en"], name: "index_genders_on_en", unique: true
     t.index ["ru"], name: "index_genders_on_ru", unique: true
+  end
+
+  create_table "numbers", force: :cascade do |t|
+    t.string "de"
+    t.string "en"
+    t.string "ru"
+    t.string "abbr_de"
+    t.string "abbr_en"
+    t.string "abbr_ru"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

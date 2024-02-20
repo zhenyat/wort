@@ -13,8 +13,20 @@ en:
         one:      Gender
         other:    Genders
 
+      number:
+        one:      Number
+        other:    Numbers
+
     attributes:
       gender:
+        de:       German
+        en:       English
+        ru:       Russian
+        abbr_de:  German abbreviation
+        abbr_en:  English abbreviation
+        abbr_ru:  Russian abbreviation
+
+      number:
         de:       German
         en:       English
         ru:       Russian
