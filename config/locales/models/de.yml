@@ -1,0 +1,23 @@
+de:
+  activerecord:
+    models:
+      # article:
+      #   one:            Artikel
+      #   other:          Artikel
+
+      # case:
+      #   one:        Kasus / Fall
+      #   other:      Kasus / Fäll
+
+      gender:
+        one:      Genus / Geschlecht
+        other:    Genera / Geschlechter
+
+    attributes:
+      gender:
+        de:       Deutsch
+        en:       Englisch
+        ru:       Russisch
+        abbr_de:  Deutsche Abkürzung
+        abbr_en:  Englische Abkürzung
+        abbr_ru:  Russische Abkürzung

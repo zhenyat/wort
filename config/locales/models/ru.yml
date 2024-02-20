@@ -1,0 +1,29 @@
+ru:
+  activerecord:
+    models:
+      # article:
+      #   one:            Артикль
+      #   other:          Артикли
+      # definite_article:
+      #   one:            Определенный артикль
+      #   other:          Определенный артикль
+      # indefinite_article:
+      #   one:            Неопределенный артикль
+      #   other:          Неопределенный артикль 
+
+      # case:
+      #   one:        Падеж
+      #   other:      Падежи
+
+      gender:
+        one:      Род
+        other:    Рода
+
+    attributes:
+      gender:
+        de:       Немецкий
+        en:       Английский
+        ru:       Русский
+        abbr_de:  Немецкое сокращение
+        abbr_en:  Английское сокращение
+        abbr_ru:  Русское сокращение        

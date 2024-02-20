@@ -1,0 +1,23 @@
+en:
+  activerecord:
+    models:
+      # article:
+      #   one:            Article
+      #   other:          Articles
+
+      # case:
+      #   one: Case
+      #   other: Cases
+
+      gender:
+        one:      Gender
+        other:    Genders
+
+    attributes:
+      gender:
+        de:       German
+        en:       English
+        ru:       Russian
+        abbr_de:  German abbreviation
+        abbr_en:  English abbreviation
+        abbr_ru:  Russian abbreviation
