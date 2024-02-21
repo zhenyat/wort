@@ -5,9 +5,9 @@ de:
       #   one:            Artikel
       #   other:          Artikel
 
-      # case:
-      #   one:        Kasus / Fall
-      #   other:      Kasus / Fäll
+      case:
+        one:        der Kasus / der Fall
+        other:      die Kasus / die Fälle
 
       gender:
         one:      das Genus / das Geschlecht
@@ -22,6 +22,17 @@ de:
         other:    die Personen
 
     attributes:
+      case:
+        de:       Deutsch
+        en:       Englisch
+        ru:       Russisch
+        abbr_de:  Deutsche Abkürzung
+        abbr_en:  Englische Abkürzung
+        abbr_ru:  Russische Abkürzung 
+        questions_de: Fragen auf Deutsch
+        questions_en: Fragen auf Englisch
+        questions_ru: Fragen auf Russisch
+
       gender:
         de:       Deutsch
         en:       Englisch

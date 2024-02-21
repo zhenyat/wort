@@ -5,9 +5,9 @@ en:
       #   one:            Article
       #   other:          Articles
 
-      # case:
-      #   one: Case
-      #   other: Cases
+      case:
+        one: Case
+        other: Cases
 
       gender:
         one:      Gender
@@ -22,6 +22,17 @@ en:
         other:    Persons
 
     attributes:
+      case:
+        de:       German
+        en:       English
+        ru:       Russian
+        abbr_de:  German abbreviation
+        abbr_en:  English abbreviation
+        abbr_ru:  Russian abbreviation
+        questions_de: Questions in German
+        questions_en: Questions in English
+        questions_ru: Questions in Russian
+
       gender:
         de:       German
         en:       English
