@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   scope "/:locale" do
-    root 'numbers#index'
-    # get 'numbers/index'
+    root 'persons#index'
+    # get 'persons/index'
+    get 'numbers/index'
     get 'genders/index'
   end
 end

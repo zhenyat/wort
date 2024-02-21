@@ -17,6 +17,10 @@ en:
         one:      Number
         other:    Numbers
 
+      person:
+        one:      Person
+        other:    Persons
+
     attributes:
       gender:
         de:       German
@@ -27,6 +31,14 @@ en:
         abbr_ru:  Russian abbreviation
 
       number:
+        de:       German
+        en:       English
+        ru:       Russian
+        abbr_de:  German abbreviation
+        abbr_en:  English abbreviation
+        abbr_ru:  Russian abbreviation
+
+      person:
         de:       German
         en:       English
         ru:       Russian

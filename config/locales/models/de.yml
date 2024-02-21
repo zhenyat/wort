@@ -10,13 +10,17 @@ de:
       #   other:      Kasus / Fäll
 
       gender:
-        one:      Genus / Geschlecht
-        other:    Genera / Geschlechter
+        one:      das Genus / das Geschlecht
+        other:    die Genera / die Geschlechter
 
       number:
         one:      die Nummer
         other:    die Nummern
   
+      person:
+        one:      die Person
+        other:    die Personen
+
     attributes:
       gender:
         de:       Deutsch
@@ -27,6 +31,14 @@ de:
         abbr_ru:  Russische Abkürzung
 
       number:
+        de:       Deutsch
+        en:       Englisch
+        ru:       Russisch
+        abbr_de:  Deutsche Abkürzung
+        abbr_en:  Englische Abkürzung
+        abbr_ru:  Russische Abkürzung
+
+      person:
         de:       Deutsch
         en:       Englisch
         ru:       Russisch
