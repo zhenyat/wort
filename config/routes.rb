@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   scope "/:locale" do
     root 'numbers#index'
     # get 'numbers/index'
-    # get 'genders/index'
+    get 'genders/index'
   end
 end
