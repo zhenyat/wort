@@ -1,15 +1,9 @@
 ru:
   activerecord:
     models:
-      # article:
-      #   one:            Артикль
-      #   other:          Артикли
-      # definite_article:
-      #   one:            Определенный артикль
-      #   other:          Определенный артикль
-      # indefinite_article:
-      #   one:            Неопределенный артикль
-      #   other:          Неопределенный артикль 
+      article:
+        one:            Артикль
+        other:          Артикли
 
       case:
         one:        Падеж
@@ -28,6 +22,11 @@ ru:
         other:    Лица
 
     attributes:
+      article:
+        de:       Немецкий
+        kinds:
+          definite:   Определенный артикль
+          indefinite: Неопределенный артикль
       case:
         de:       Немецкий
         en:       Английский

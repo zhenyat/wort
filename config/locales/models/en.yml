@@ -1,9 +1,9 @@
 en:
   activerecord:
     models:
-      # article:
-      #   one:            Article
-      #   other:          Articles
+      article:
+        one:            Article
+        other:          Articles
 
       case:
         one: Case
@@ -22,6 +22,12 @@ en:
         other:    Persons
 
     attributes:
+      article:
+        de:           German
+        kinds:
+          definite:   Definite Article
+          indefinite: Indefinite Article
+
       case:
         de:       German
         en:       English

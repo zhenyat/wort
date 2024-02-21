@@ -1,4 +1,6 @@
 class Number < ApplicationRecord
+  has_many :articles
+  
   validates :de, presence: true, uniqueness: true
   validates :en, presence: true, uniqueness: true
   validates :ru, presence: true, uniqueness: true

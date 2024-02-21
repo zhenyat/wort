@@ -1,9 +1,15 @@
 de:
   activerecord:
     models:
-      # article:
-      #   one:            Artikel
-      #   other:          Artikel
+      article:
+        one:            Artikel
+        other:          Artikel
+      definite_article:
+        one:            Bestimmter Artikel
+        other:          Bestimmte Artikel
+      indefinite_article:
+        one:            Unbestimmter Artikel
+        other:          Unbestimmte Artikel
 
       case:
         one:        der Kasus / der Fall
@@ -22,6 +28,11 @@ de:
         other:    die Personen
 
     attributes:
+      article:
+        de:       Deutsch
+        kinds:
+          definite:   Bestimmter Artikel
+          indefinite: Unbestimmter Artikel
       case:
         de:       Deutsch
         en:       Englisch

@@ -16,17 +16,17 @@
       </tr>
     </thead>
     <tbody>
-      <% @cases.each do |kase| %>
+      <% @cases.each do |kasus| %>   # 'case' is Ruby's word
         <tr class="text-xl bg-blue-100 text-center">
-          <td class="px-6 py-4"><%= kase.de %></td>
-          <td class="px-6 py-4"><%= kase.en %></td>
-          <td class="px-6 py-4"><%= kase.ru %></td>
-          <td class="px-6 py-4"><%= kase.abbr_de %></td>
-          <td class="px-6 py-4"><%= kase.abbr_en %></td>
-          <td class="px-6 py-4"><%= kase.abbr_ru %></td>
-          <td class="px-6 py-4"><%= kase.questions_de %></td>
-          <td class="px-6 py-4"><%= kase.questions_en %></td>
-          <td class="px-6 py-4"><%= kase.questions_ru %></td>
+          <td class="px-6 py-4"><%= kasus.de %></td>
+          <td class="px-6 py-4"><%= kasus.en %></td>
+          <td class="px-6 py-4"><%= kasus.ru %></td>
+          <td class="px-6 py-4"><%= kasus.abbr_de %></td>
+          <td class="px-6 py-4"><%= kasus.abbr_en %></td>
+          <td class="px-6 py-4"><%= kasus.abbr_ru %></td>
+          <td class="px-6 py-4"><%= kasus.questions_de %></td>
+          <td class="px-6 py-4"><%= kasus.questions_en %></td>
+          <td class="px-6 py-4"><%= kasus.questions_ru %></td>
         </tr>
       <% end %>
     </tbody>
