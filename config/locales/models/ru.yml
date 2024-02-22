@@ -21,6 +21,10 @@ ru:
         one:      Лицо
         other:    Лица
 
+      personal_pronoun:
+        one:      Личное местоимение
+        other:    Личные местоимения
+
     attributes:
       article:
         de:       Немецкий
@@ -61,3 +65,8 @@ ru:
         abbr_de:  Немецкое сокращение
         abbr_en:  Английское сокращение
         abbr_ru:  Русское сокращение        
+
+        personal_pronoun:
+        de:       Немецкий
+        en:       Английский
+        ru:       Русский

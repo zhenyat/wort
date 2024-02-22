@@ -27,6 +27,10 @@ de:
         one:      die Person
         other:    die Personen
 
+      personal_pronoun:
+        one:      das Personalpronomen
+        other:    die Personalpronomen
+
     attributes:
       article:
         de:       Deutsch
@@ -67,3 +71,8 @@ de:
         abbr_de:  Deutsche Abkürzung
         abbr_en:  Englische Abkürzung
         abbr_ru:  Russische Abkürzung
+
+        personal_pronoun:
+          de:       Deutsch
+          en:       Englisch
+          ru:       Russisch

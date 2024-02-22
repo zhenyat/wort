@@ -21,6 +21,10 @@ en:
         one:      Person
         other:    Persons
 
+      personal_pronoun:
+        one:      Personal pronoun
+        other:    Personal pronouns
+              
     attributes:
       article:
         de:           German
@@ -62,3 +66,8 @@ en:
         abbr_de:  German abbreviation
         abbr_en:  English abbreviation
         abbr_ru:  Russian abbreviation
+
+      personal_pronoun:
+        de:       German
+        en:       English
+        ru:       Russian

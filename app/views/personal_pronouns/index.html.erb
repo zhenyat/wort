@@ -1,0 +1,40 @@
+<div class="relative overflow-x-auto">
+  <h1 class="mb-4 font-bold text-4xl pb3"><%= PersonalPronoun.model_name.human count: 2 %></h1>
+
+  <table class="min-w-full table-auto">
+    <thead class="text-xl text-gray-700 bg-gray-200">
+      <tr>
+        <th scope="col" class="px-6 py-0"><%= Case.model_name.human %></th>
+        <th colspan='5' scope="col" class="px-6 py-0"><%= Number.find_by(en: 'singular').attributes[I18n.locale.to_s] %></th>
+        <th colspan='4' scope="col" class="px-6 py-0"><%= Number.find_by(en: 'plural').attributes[I18n.locale.to_s] %></th>
+      </tr>
+      <tr>
+        <th scope="col" class="px-6 py-0"></th>
+        <th scope="col" class="px-6 py-0"><%= Person.find_by(en: '1st person').attributes[I18n.locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0"><%= Person.find_by(en: '2nd person').attributes[I18n.locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0"><%= Person.find_by(en: '3rd person').attributes[I18n.locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0"><%= Person.find_by(en: '3rd person').attributes[I18n.locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0"><%= Person.find_by(en: '3rd person').attributes[I18n.locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0"><%= Person.find_by(en: '1st person').attributes[I18n.locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0"><%= Person.find_by(en: '2nd person').attributes[I18n.locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0"><%= Person.find_by(en: '3rd person').attributes[I18n.locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0"><%= Number.find_by(en: 'polite').attributes[I18n.locale.to_s] %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @cases.each do |kasus| %>
+            <tr class="text-xl bg-blue-100 text-center">
+              <td class="px-6 py-2"><%= kasus.abbr_de %></td>
+              <td><%= @personal_pronouns.find_by(case: kasus, number: Number.find_by(en: 'singular'), person: Person.find_by(en: '1st person'), gender: Gender.find_by(en: 'na')).de %></td>
+              <td><%= @personal_pronouns.find_by(case: kasus, number: Number.find_by(en: 'singular'), person: Person.find_by(en: '2nd person'), gender: Gender.find_by(en: 'na')).de %></td>
+              <td><%= @personal_pronouns.find_by(case: kasus, number: Number.find_by(en: 'singular'), person: Person.find_by(en: '3rd person'), gender: Gender.find_by(en: 'masculine')).de %></td>
+              <td><%= @personal_pronouns.find_by(case: kasus, number: Number.find_by(en: 'singular'), person: Person.find_by(en: '3rd person'), gender: Gender.find_by(en: 'feminine')).de %></td>
+              <td><%= @personal_pronouns.find_by(case: kasus, number: Number.find_by(en: 'singular'), person: Person.find_by(en: '3rd person'), gender: Gender.find_by(en: 'neuter')).de %></td>
+              <td><%= @personal_pronouns.find_by(case: kasus, number: Number.find_by(en: 'plural'),   person: Person.find_by(en: '1st person'), gender: Gender.find_by(en: 'na')).de %></td>
+              <td><%= @personal_pronouns.find_by(case: kasus, number: Number.find_by(en: 'plural'),   person: Person.find_by(en: '2nd person'), gender: Gender.find_by(en: 'na')).de %></td>
+              <td><%= @personal_pronouns.find_by(case: kasus, number: Number.find_by(en: 'plural'),   person: Person.find_by(en: '3rd person'), gender: Gender.find_by(en: 'na')).de %></td>
+              <td><%= @personal_pronouns.find_by(case: kasus, number: Number.find_by(en: 'polite'),   person: Person.find_by(en: '2nd person'), gender: Gender.find_by(en: 'na')).de %></td>
+            </tr>  
+      <% end %>
+    </tbody>
+  </table>

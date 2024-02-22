@@ -1,8 +1,5 @@
 class ArticlesController < ApplicationController
   def index
-    @cases = Case.all
-    @numbers = Number.all
-    @genders = Gender.all
     @definite_articles = Article.definite
     @indefinite_articles = Article.indefinite
   end

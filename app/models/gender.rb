@@ -1,5 +1,6 @@
 class Gender < ApplicationRecord
   has_many :articles
+  has_many :personal_pronoun
   
   validates :de, presence: true, uniqueness: true
   validates :en, presence: true, uniqueness: true

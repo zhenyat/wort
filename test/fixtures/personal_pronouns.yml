@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  case: one
+  number: one
+  person: one
+  gender: one
+  de: MyString
+  en: MyString
+  ru: MyString
+
+two:
+  case: two
+  number: two
+  person: two
+  gender: two
+  de: MyString
+  en: MyString
+  ru: MyString

@@ -13,7 +13,7 @@
     <tbody>
       <% @cases.each do |kasus| %>
         <tr class="text-xl bg-green-100 text-center">
-          <td class="px-6 py-4"><%= kasus.abbr_de %></td>
+          <td class="px-6 py-2"><%= kasus.abbr_de %></td>
           <td><%= @definite_articles.find_by(case: kasus, number: Number.find_by(en: 'singular'), gender: Gender.find_by(en: 'masculine')).de %></td>
           <td><%= @definite_articles.find_by(case: kasus, number: Number.find_by(en: 'singular'), gender: Gender.find_by(en: 'feminine')).de %></td>
           <td><%= @definite_articles.find_by(case: kasus, number: Number.find_by(en: 'singular'), gender: Gender.find_by(en: 'neuter')).de %></td>
@@ -35,7 +35,7 @@
     <tbody>
       <% @cases.each do |kasus| %>
         <tr class="text-xl bg-green-100 text-center">
-          <td class="px-6 py-4"><%= kasus.abbr_de %></td>
+          <td class="px-6 py-2"><%= kasus.abbr_de %></td>
           <td><%= @indefinite_articles.find_by(case: kasus, number: Number.find_by(en: 'singular'), gender: Gender.find_by(en: 'masculine')).de %></td>
           <td><%= @indefinite_articles.find_by(case: kasus, number: Number.find_by(en: 'singular'), gender: Gender.find_by(en: 'feminine')).de %></td>
           <td><%= @indefinite_articles.find_by(case: kasus, number: Number.find_by(en: 'singular'), gender: Gender.find_by(en: 'neuter')).de %></td>
