@@ -7,11 +7,11 @@ Rails.application.routes.draw do
 
   scope "/:locale" do
     root 'personal_pronouns#index'
-    # get 'personal_pronouns/index'
-    get 'articles/index'
-    get 'cases/index'
-    get 'persons/index'
-    get 'numbers/index'
-    get 'genders/index'
+    # resources :personal_pronouns, only: :index
+    resources :articles, only: :index
+    resources :cases, only: :index
+    resources :persons, only: :index
+    resources :numbers, only: :index
+    resources :genders, only: :index
   end
 end
