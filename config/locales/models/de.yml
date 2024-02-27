@@ -12,24 +12,24 @@ de:
         other:          Unbestimmte Artikel
 
       case:
-        one:        der Kasus / der Fall
-        other:      die Kasus / die Fälle
+        one:        Kasus / Fall
+        other:      Kasus / Fälle
 
       gender:
-        one:      das Genus / das Geschlecht
-        other:    die Genera / die Geschlechter
+        one:      Genus / Geschlecht
+        other:    Genera / Geschlechter
 
       number:
-        one:      die Nummer
-        other:    die Nummern
+        one:      Nummer
+        other:    Nummern
   
       person:
-        one:      die Person
-        other:    die Personen
+        one:      Person
+        other:    Personen
 
       personal_pronoun:
-        one:      das Personalpronomen
-        other:    die Personalpronomen
+        one:      Personalpronomen
+        other:    Personalpronomen
 
     attributes:
       article:

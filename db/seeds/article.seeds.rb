@@ -14,7 +14,7 @@ begin
         gender: gender = Gender.find_by(en: 'neuter'), kind: 'definite', de: 'das'
       },
       { case: kasus, number: number = Number.find_by(en: 'plural'),
-        gender: gender = Gender.find_by(en: 'na'), kind: 'definite', de: 'die'
+        gender: gender = Gender.find_by(en: 'any'), kind: 'definite', de: 'die'
       }
     ])
     kasus = Case.find_by(en: 'accusative')
@@ -29,7 +29,7 @@ begin
         gender: gender = Gender.find_by(en: 'neuter'), kind: 'definite', de: 'das'
       },
       { case: kasus, number: number = Number.find_by(en: 'plural'),
-        gender: gender = Gender.find_by(en: 'na'), kind: 'definite', de: 'die'
+        gender: gender = Gender.find_by(en: 'any'), kind: 'definite', de: 'die'
       }
     ])
     kasus = Case.find_by(en: 'dative')
@@ -44,7 +44,7 @@ begin
         gender: gender = Gender.find_by(en: 'neuter'), kind: 'definite', de: 'dem'
       },
       { case: kasus, number: number = Number.find_by(en: 'plural'),
-        gender: gender = Gender.find_by(en: 'na'), kind: 'definite', de: 'den'
+        gender: gender = Gender.find_by(en: 'any'), kind: 'definite', de: 'den'
       }
     ])
     kasus = Case.find_by(en: 'genitive')
@@ -59,7 +59,7 @@ begin
         gender: gender = Gender.find_by(en: 'neuter'), kind: 'definite', de: 'des'
       },
       { case: kasus, number: number = Number.find_by(en: 'plural'),
-        gender: gender = Gender.find_by(en: 'na'), kind: 'definite', de: 'der'
+        gender: gender = Gender.find_by(en: 'any'), kind: 'definite', de: 'der'
       }
     ])
 
@@ -76,7 +76,7 @@ begin
         gender: gender = Gender.find_by(en: 'neuter'), kind: 'indefinite', de: 'ein'
       },
       { case: kasus, number: number = Number.find_by(en: 'plural'),
-        gender: gender = Gender.find_by(en: 'na'), kind: 'indefinite', de: 'keine'
+        gender: gender = Gender.find_by(en: 'any'), kind: 'indefinite', de: 'keine'
       }
     ])
     kasus = Case.find_by(en: 'accusative')
@@ -91,7 +91,7 @@ begin
         gender: gender = Gender.find_by(en: 'neuter'), kind: 'indefinite', de: 'ein'
       },
       { case: kasus, number: number = Number.find_by(en: 'plural'),
-        gender: gender = Gender.find_by(en: 'na'), kind: 'indefinite', de: 'keine'
+        gender: gender = Gender.find_by(en: 'any'), kind: 'indefinite', de: 'keine'
       }
     ])
     kasus = Case.find_by(en: 'dative')
@@ -106,7 +106,7 @@ begin
         gender: gender = Gender.find_by(en: 'neuter'), kind: 'indefinite', de: 'einem'
       },
       { case: kasus, number: number = Number.find_by(en: 'plural'),
-        gender: gender = Gender.find_by(en: 'na'), kind: 'indefinite', de: 'keinen'
+        gender: gender = Gender.find_by(en: 'any'), kind: 'indefinite', de: 'keinen'
       }
     ])
     kasus = Case.find_by(en: 'genitive')
@@ -121,7 +121,7 @@ begin
         gender: gender = Gender.find_by(en: 'neuter'), kind: 'indefinite', de: 'eines'
       },
       { case: kasus, number: number = Number.find_by(en: 'plural'),
-        gender: gender = Gender.find_by(en: 'na'), kind: 'indefinite', de: 'keiner'
+        gender: gender = Gender.find_by(en: 'any'), kind: 'indefinite', de: 'keiner'
       }
     ])
 
