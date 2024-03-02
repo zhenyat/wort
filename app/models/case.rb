@@ -1,7 +1,7 @@
 class Case < ApplicationRecord
   has_many :articles
-  has_many :personal_pronoun
-
+  has_many :personal_pronouns
+  
   validates :de, presence: true, uniqueness: true
   validates :en, presence: true, uniqueness: true
   validates :ru, presence: true, uniqueness: true

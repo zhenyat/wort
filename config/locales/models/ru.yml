@@ -25,6 +25,10 @@ ru:
         one:      Личное местоимение
         other:    Личные местоимения
 
+      possessive_pronoun:
+        one:      Притяжательное местоимение
+        other:    Притяжательные местоимения
+
     attributes:
       article:
         de:       Немецкий

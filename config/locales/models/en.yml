@@ -22,9 +22,13 @@ en:
         other:    Persons
 
       personal_pronoun:
-        one:      Personal pronoun
-        other:    Personal pronouns
-              
+        one:      Personal Pronoun
+        other:    Personal Pronouns
+
+      possessive_pronoun:
+        one:      Possessive Pronoun
+        other:    Possessive Pronouns
+
     attributes:
       article:
         de:           German

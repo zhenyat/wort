@@ -1,6 +1,7 @@
 class Number < ApplicationRecord
   has_many :articles
-  has_many :personal_pronoun
+  has_many :personal_pronouns
+  has_many :possessive_pronouns
 
   validates :de, presence: true, uniqueness: true
   validates :en, presence: true, uniqueness: true

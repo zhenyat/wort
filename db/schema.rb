@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_21_201831) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_01_094453) do
   create_table "articles", force: :cascade do |t|
     t.integer "case_id", null: false
     t.integer "number_id", null: false
@@ -114,6 +114,21 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_21_201831) do
     t.index ["ru"], name: "index_persons_on_ru", unique: true
   end
 
+  create_table "possessive_pronouns", force: :cascade do |t|
+    t.integer "personal_pronoun_id", null: false
+    t.integer "number_id", null: false
+    t.integer "gender_id", null: false
+    t.string "de", null: false
+    t.string "en", null: false
+    t.string "ru", null: false
+    t.string "ending"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["gender_id"], name: "index_possessive_pronouns_on_gender_id"
+    t.index ["number_id"], name: "index_possessive_pronouns_on_number_id"
+    t.index ["personal_pronoun_id"], name: "index_possessive_pronouns_on_personal_pronoun_id"
+  end
+
   add_foreign_key "articles", "cases"
   add_foreign_key "articles", "genders"
   add_foreign_key "articles", "numbers"
@@ -121,4 +136,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_21_201831) do
   add_foreign_key "personal_pronouns", "genders"
   add_foreign_key "personal_pronouns", "numbers"
   add_foreign_key "personal_pronouns", "persons"
+  add_foreign_key "possessive_pronouns", "genders"
+  add_foreign_key "possessive_pronouns", "numbers"
+  add_foreign_key "possessive_pronouns", "personal_pronouns"
 end

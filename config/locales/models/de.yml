@@ -31,6 +31,10 @@ de:
         one:      Personalpronomen
         other:    Personalpronomen
 
+      possessive_pronoun:
+        one:      Possessivpronomen
+        other:    Possessivpronomen
+
     attributes:
       article:
         de:       Deutsch

@@ -1,8 +1,6 @@
-class PersonalPronoun < ApplicationRecord
-  has_many   :possessive_pronouns
-  belongs_to :case
+class PossessivePronoun < ApplicationRecord
+  belongs_to :personal_pronoun
   belongs_to :number
-  belongs_to :person
   belongs_to :gender
 
   validates :de, presence: true
