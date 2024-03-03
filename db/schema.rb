@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_01_094453) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_03_164357) do
   create_table "articles", force: :cascade do |t|
     t.integer "case_id", null: false
     t.integer "number_id", null: false
@@ -118,6 +118,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_01_094453) do
     t.integer "personal_pronoun_id", null: false
     t.integer "number_id", null: false
     t.integer "gender_id", null: false
+    t.integer "kind", limit: 1, default: 0, null: false
+    t.string "integer"
     t.string "de", null: false
     t.string "en", null: false
     t.string "ru", null: false

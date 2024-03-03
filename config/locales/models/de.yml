@@ -76,7 +76,15 @@ de:
         abbr_en:  Englische Abkürzung
         abbr_ru:  Russische Abkürzung
 
-        personal_pronoun:
-          de:       Deutsch
-          en:       Englisch
-          ru:       Russisch
+      personal_pronoun:
+        de:       Deutsch
+        en:       Englisch
+        ru:       Russisch
+
+      possessive_pronoun:
+        de:       Deutsch
+        en:       Englisch
+        ru:       Russisch
+        kinds:
+          as_article:   'Possessivpronomen als Artikel'
+          as_noun:      'Possessivpronomen als Substantive'

@@ -75,3 +75,11 @@ en:
         de:       German
         en:       English
         ru:       Russian
+
+      possessive_pronoun:
+        de:       German
+        en:       English
+        ru:       Russian
+        kinds:
+          as_article:   'Possessive Pronouns as Articles'
+          as_noun:      'Possessive Pronouns as Nouns'

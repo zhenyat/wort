@@ -1,39 +1,10 @@
 <div class="relative w-screen">
   <h1 class="mb-4 font-bold text-4xl pb-3"><%= PossessivePronoun.model_name.human count: 2 %></h1>
 
-  <table class="min-w-full table-auto border border-collapse border-slate-500 text-gray-500 dark:text-gray-400"> 
-    <thead class="text-xl text-gray-700 bg-gray-200">
-      <tr>
-        <th rowspan=2 scope="col" class="px-6 py-0 border border-slate-400"><%= PersonalPronoun.model_name.human + " (Nominative)" %></th>
-        <th rowspan=2 scope="col" class="px-6 py-0 border border-slate-400"><%= Case.model_name.human %></th>
-        <th rowspan=2 scope="col" class="px-6 py-0 border border-slate-400"><%= PersonalPronoun.model_name.human + " Declined" %></th>
-        <th colspan=3 scope="col" class="px-6 py-0 border border-slate-400"><%= Number.find_by(en: 'singular').attributes[I18n.locale.to_s] %></th>
-        <th rowspan=2 scope="col" class="px-6 py-0 border border-slate-400"><%= Number.find_by(en: 'plural').attributes[I18n.locale.to_s] %></th>
-      </tr>
-      <tr>
-        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Gender.find_by(en: 'masculine').attributes[I18n.locale.to_s] %></th>
-        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Gender.find_by(en: 'feminine').attributes[I18n.locale.to_s] %></th>
-        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Gender.find_by(en: 'neuter').attributes[I18n.locale.to_s] %></th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @personal_pronouns_nominative.each do |ppn| %>
-        <tr class="text-xl text-center">
-          <td rowspan=5 class="text-xl text-center text-blue-700 bg-yellow-100 px-6 py-0 border border-slate-400"><%= ppn.de %></td>
-        </tr>
-        <% @cases.each do |kasus| %>
-          <% pp = @personal_pronouns.find_by(case: kasus, number: ppn.number, person: ppn.person, gender: ppn.gender) %>
-          <% p = pp.possessive_pronouns %>
-          <tr class="text-xl text-center even:bg-blue-50 odd:bg-green-50">
-            <td class="px-6 py-0 text-green-700 border border-slate-400"><%= kasus.abbr_de %></td>
-            <td class="py-0 border text-blue-700 border-slate-400"><%= pp.de %></td>
-            <td class="py-0 border border-slate-400"><%= p.first.de %></td>
-            <td class="py-0 border border-slate-400"><%= p.second.de %></td>
-            <td class="py-0 border border-slate-400"><%= p.third.de %></td>
-            <td class="py-0 border border-slate-400"><%= p.fourth.de %></td>
-          </tr>
-        <% end %>
-      <% end %>
-    </tbody>
-  </table>
+  <h2 class="mb-3 font-bold text-3xl text-blue-500 pb-3"><%= PossessivePronoun.human_enum_name(:kind, :as_article) %></h1>
+  <%= render '/shared/table', resource: 'as_article' %>
+
+  <h2 class="mt-6 mb-3 font-bold text-3xl text-blue-500 pb-3"><%= PossessivePronoun.human_enum_name(:kind, :as_noun) %></h1>
+  <%= render '/shared/table', resource: 'as_noun' %>
+
 </div>

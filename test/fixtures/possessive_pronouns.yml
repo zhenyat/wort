@@ -4,6 +4,8 @@ one:
   personal_pronoun: one
   number: one
   gender: one
+  kind: MyString
+  integer: MyString
   de: MyString
   en: MyString
   ru: MyString
@@ -13,6 +15,8 @@ two:
   personal_pronoun: two
   number: two
   gender: two
+  kind: MyString
+  integer: MyString
   de: MyString
   en: MyString
   ru: MyString
