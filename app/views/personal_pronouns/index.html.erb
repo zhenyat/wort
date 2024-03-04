@@ -5,19 +5,19 @@
     <thead class="text-xl text-gray-700 bg-gray-200">
       <tr>
         <th rowspan=2 scope="col" class="px-6 py-0 border border-slate-400"><%= Case.model_name.human %></th>
-        <th colspan=5 scope="col" class="px-6 py-0 border border-slate-400"><%= Number.find_by(en: 'singular').attributes[I18n.locale.to_s] %></th>
-        <th colspan=4 scope="col" class="px-6 py-0 border border-slate-400"><%= Number.find_by(en: 'plural').attributes[I18n.locale.to_s] %></th>
+        <th colspan=5 scope="col" class="px-6 py-0 border border-slate-400"><%= Number.find_by(en: 'singular').attributes[locale.to_s] %></th>
+        <th colspan=4 scope="col" class="px-6 py-0 border border-slate-400"><%= Number.find_by(en: 'plural').attributes[locale.to_s] %></th>
       </tr>
       <tr>
-        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '1st person').attributes[I18n.locale.to_s] %></th>
-        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '2nd person').attributes[I18n.locale.to_s] %></th>
-        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '3rd person').attributes[I18n.locale.to_s] %></th>
-        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '3rd person').attributes[I18n.locale.to_s] %></th>
-        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '3rd person').attributes[I18n.locale.to_s] %></th>
-        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '1st person').attributes[I18n.locale.to_s] %></th>
-        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '2nd person').attributes[I18n.locale.to_s] %></th>
-        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '3rd person').attributes[I18n.locale.to_s] %></th>
-        <th scope="col" class="px-6 py-0 border border-slate-400 border border-slate-400"><%= Number.find_by(en: 'polite').attributes[I18n.locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '1st person').attributes[locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '2nd person').attributes[locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '3rd person').attributes[locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '3rd person').attributes[locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '3rd person').attributes[locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '1st person').attributes[locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '2nd person').attributes[locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0 border border-slate-400"><%= Person.find_by(en: '3rd person').attributes[locale.to_s] %></th>
+        <th scope="col" class="px-6 py-0 border border-slate-400 border border-slate-400"><%= Number.find_by(en: 'polite').attributes[locale.to_s] %></th>
       </tr>
     </thead>
     <tbody>

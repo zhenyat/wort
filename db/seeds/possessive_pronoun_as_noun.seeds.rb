@@ -834,7 +834,7 @@ begin
       },
       { personal_pronoun: personal_pronoun, kind: kind,
         number: Number.find_by(en: 'plural'), gender: Gender.find_by(en: 'any'),
-        de: 'Ihrer', en: 'Your', ru: 'Ваши', ending: 'es'
+        de: 'Ihrer', en: 'Your', ru: 'Ваши', ending: 'er'
       },
     ])
 
