@@ -17,6 +17,10 @@ en:
         one:      Number
         other:    Numbers
 
+      part_of_speech:
+        one:      Part of Speech
+        other:    Parts of Speech
+
       person:
         one:      Person
         other:    Persons

@@ -22,6 +22,10 @@ de:
       number:
         one:      Nummer
         other:    Nummern
+
+      part_of_speech:
+        one:      Teil der Rede
+        other:    Teile der Rede
   
       person:
         one:      Person

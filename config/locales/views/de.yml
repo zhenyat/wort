@@ -1,9 +1,11 @@
 de:
-  hello: "Hallo Welt!"
-
-  locales:
-    de:   Deutsch
-    en:   Englisch
-    ru:   Russisch
-
   declination:  Deklination
+  hello:        Hallo Welt!"
+  home:         Heim
+  locales:
+    de:         Deutsch
+    en:         Englisch
+    ru:         Russisch
+
+  parts_of_speech: Teile der Rede
+  

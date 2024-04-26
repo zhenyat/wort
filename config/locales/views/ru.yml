@@ -1,10 +1,10 @@
 ru:
-  hello: "Привет, мир!"
-
-  locales:
-    de:   Немецкий
-    en:   Английский
-    ru:   Русский
-
   declination:  Склонение
-  
+  hello:        Привет, мир!
+  home:         Главная
+  locales:
+    de:         Немецкий
+    en:         Английский
+    ru:         Русский
+
+  parts_of_speech:  Части речи

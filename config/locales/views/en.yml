@@ -1,9 +1,12 @@
 en:
-  hello: "Hello world!"
-  
-  locales:
-    de:   German
-    en:   English
-    ru:   Russian
-
   declination:  Declination
+
+  hello:        Hello world!
+  home:         Home
+
+  locales:
+    de:         German
+    en:         English
+    ru:         Russian
+
+  parts_of_speech: Parts of Speech    # temporary (w/o model)
