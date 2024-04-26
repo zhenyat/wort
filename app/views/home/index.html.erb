@@ -1,4 +1,11 @@
-<div class="w-full flex justify-center no-wrap">
-  <h1 class="text-3xl font-normal leading-normal">Home</h1>
-  <p><%= t 'Hello' %></p>
+<div class=''>
+  <h1 class="font-bold text-4xl text-center">Home</h1>
+  <h3><%= t 'hello' %></h3>
+
+  <% (1..50).each do |i| %>
+    <p class='text-center'><%= "line #{i}" %></p>
+  <% end %>
+
+  <!--h1 class="text-3xl font-normal leading-normal">Home</h1>
+  <p><%= t 'hello' %></p-->
 </div>
