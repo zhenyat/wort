@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  de: MyString
+  en: MyString
+  ru: MyString
+  cmt_de: MyText
+  cmt_en: MyText
+  cmt_ru: MyText
+
+two:
+  de: MyString
+  en: MyString
+  ru: MyString
+  cmt_de: MyText
+  cmt_en: MyText
+  cmt_ru: MyText

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_03_164357) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_27_133730) do
   create_table "articles", force: :cascade do |t|
     t.integer "case_id", null: false
     t.integer "number_id", null: false
@@ -79,6 +79,20 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_03_164357) do
     t.index ["de"], name: "index_numbers_on_de", unique: true
     t.index ["en"], name: "index_numbers_on_en", unique: true
     t.index ["ru"], name: "index_numbers_on_ru", unique: true
+  end
+
+  create_table "parts_of_speech", force: :cascade do |t|
+    t.string "de", null: false
+    t.string "en", null: false
+    t.string "ru", null: false
+    t.text "cmt_de"
+    t.text "cmt_en"
+    t.text "cmt_ru"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["de"], name: "index_parts_of_speech_on_de", unique: true
+    t.index ["en"], name: "index_parts_of_speech_on_en", unique: true
+    t.index ["ru"], name: "index_parts_of_speech_on_ru", unique: true
   end
 
   create_table "personal_pronouns", force: :cascade do |t|
