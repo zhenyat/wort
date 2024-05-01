@@ -11,7 +11,7 @@ begin
       },
       { de: 'Dativ', en: 'dative', ru: 'дательный',
         abbr_de: 'Dat.', abbr_en: 'DAT', abbr_ru: 'д.п.',
-        questions_de: 'Wem? Was?', questions_en: 'Whom? to What?', questions_ru: 'Кому? Чему?'# Где? Когда?'
+        questions_de: 'Wem?', questions_en: 'Whom? to What?', questions_ru: 'Кому? Чему?'# Где? Когда?'
       },
       { de: 'Genitiv', en: 'genitive', ru: 'родительный',  
         abbr_de: 'Gen.', abbr_en: 'GEN', abbr_ru: 'р.п.',

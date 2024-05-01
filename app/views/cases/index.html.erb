@@ -31,4 +31,9 @@
       <% end %>
     </tbody>
   </table>
+
+  <% @cases.each do |kasus| %>
+    <h2 class='font-bold pt-4'><%= kasus.ru.capitalize %></h2>
+    <p><%= sanitize kasus.content %></p>
+  <% end %>
 </div>

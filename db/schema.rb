@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_27_133730) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_01_072121) do
   create_table "articles", force: :cascade do |t|
     t.integer "case_id", null: false
     t.integer "number_id", null: false
@@ -36,6 +36,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_27_133730) do
     t.string "questions_ru", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "content"
     t.index ["abbr_de"], name: "index_cases_on_abbr_de", unique: true
     t.index ["abbr_en"], name: "index_cases_on_abbr_en", unique: true
     t.index ["abbr_ru"], name: "index_cases_on_abbr_ru", unique: true
