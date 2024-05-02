@@ -39,9 +39,9 @@ de:
         one:      Possessivpronomen
         other:    Possessivpronomen
 
-      scheme:
-        one:      das Verbschema
-        other:    die Verbschemen
+      vowels_change:
+        one:      Vokalwechsel
+        other:    Vokalewechsel
 
     attributes:
       article:
@@ -97,7 +97,7 @@ de:
           as_article:   'Possessivpronomen als Artikel'
           as_noun:      'Possessivpronomen als Substantive'
 
-      scheme:
-        rule:     Regel  
+      vowels_change:
+        scheme:   Scheme  
         assoc:    Verband  
         sample:   Beispiel
