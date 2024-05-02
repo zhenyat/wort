@@ -33,6 +33,10 @@ en:
         one:      Possessive Pronoun
         other:    Possessive Pronouns
 
+      scheme:
+        one:      Verb Scheme
+        other:    Verb Schemes
+
     attributes:
       article:
         de:           German
@@ -87,3 +91,8 @@ en:
         kinds:
           as_article:   'Possessive Pronouns as Articles'
           as_noun:      'Possessive Pronouns as Nouns'
+
+      scheme:
+        rule:     Rule  
+        assoc:    Association  
+        sample:   Sample

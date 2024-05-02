@@ -39,6 +39,10 @@ de:
         one:      Possessivpronomen
         other:    Possessivpronomen
 
+      scheme:
+        one:      das Verbschema
+        other:    die Verbschemen
+
     attributes:
       article:
         de:       Deutsch
@@ -92,3 +96,8 @@ de:
         kinds:
           as_article:   'Possessivpronomen als Artikel'
           as_noun:      'Possessivpronomen als Substantive'
+
+      scheme:
+        rule:     Regel  
+        assoc:    Verband  
+        sample:   Beispiel

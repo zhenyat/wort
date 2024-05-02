@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_01_072121) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_02_103212) do
   create_table "articles", force: :cascade do |t|
     t.integer "case_id", null: false
     t.integer "number_id", null: false
@@ -144,6 +144,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_01_072121) do
     t.index ["gender_id"], name: "index_possessive_pronouns_on_gender_id"
     t.index ["number_id"], name: "index_possessive_pronouns_on_number_id"
     t.index ["personal_pronoun_id"], name: "index_possessive_pronouns_on_personal_pronoun_id"
+  end
+
+  create_table "schemes", force: :cascade do |t|
+    t.string "rule", null: false
+    t.string "assoc"
+    t.string "sample"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["rule"], name: "index_schemes_on_rule", unique: true
   end
 
   add_foreign_key "articles", "cases"
