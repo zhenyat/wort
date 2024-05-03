@@ -29,9 +29,9 @@ ru:
         one:      Притяжательное местоимение
         other:    Притяжательные местоимения
 
-      vowels_change:
-        one:      Изменение гласных
-        other:    Изменения гласных
+      stem_vowel:
+        one:      Корневая гласная
+        other:    Корневые гласные
 
     attributes:
       article:
@@ -91,7 +91,7 @@ ru:
           as_article:   'Притяжательные местоимения как артикли'
           as_noun:      'Притяжательные местоимения как существительные'
 
-      vowels_change:
-        scheme:     Схема 
+      stem_vowel:
+        scheme:   Схема 
         assoc:    Ассоциация
         sample:   Пример

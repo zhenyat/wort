@@ -33,9 +33,9 @@ en:
         one:      Possessive Pronoun
         other:    Possessive Pronouns
 
-      vowels_change:
-        one:      Vowels Change
-        other:    Vowels Changes
+      stem_vowel:
+        one:      Stem Vowel
+        other:    Stem Vowels
 
     attributes:
       article:
@@ -92,7 +92,7 @@ en:
           as_article:   'Possessive Pronouns as Articles'
           as_noun:      'Possessive Pronouns as Nouns'
 
-      vowels_change:
+      stem_vowel:
         rule:     Scheme  
         assoc:    Association  
         sample:   Sample

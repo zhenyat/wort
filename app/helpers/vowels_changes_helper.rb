@@ -1,2 +1,0 @@
-module VowelsChangesHelper
-end

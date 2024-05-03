@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_02_184318) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_03_171704) do
   create_table "articles", force: :cascade do |t|
     t.integer "case_id", null: false
     t.integer "number_id", null: false
@@ -146,13 +146,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_02_184318) do
     t.index ["personal_pronoun_id"], name: "index_possessive_pronouns_on_personal_pronoun_id"
   end
 
-  create_table "vowels_changes", force: :cascade do |t|
+  create_table "stem_vowels", force: :cascade do |t|
     t.string "scheme", null: false
     t.string "assoc"
     t.string "sample"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["scheme"], name: "index_vowels_changes_on_scheme", unique: true
+    t.index ["scheme"], name: "index_stem_vowels_on_scheme", unique: true
   end
 
   add_foreign_key "articles", "cases"

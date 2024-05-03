@@ -1,6 +1,6 @@
 require "test_helper"
 
-class VowelsChangeTest < ActiveSupport::TestCase
+class StemVowelTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
