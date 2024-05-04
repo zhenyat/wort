@@ -1,4 +1,18 @@
 ru:
+  header:
+    actions:        Действия
+    editing:        'Редактировать %{model}'
+    new:            'Создать %{model}'
+    view:           '%{model}'
+
+  button:
+    back:           К списку
+    create:         Создать 
+    delete:         Удалить
+    edit:           Редактировать
+    save:           Сохранить
+    show:           Просмотреть
+
   declination:  Склонение
   hello:        Привет, мир!
   home:         Главная
@@ -6,5 +20,3 @@ ru:
     de:         Немецкий
     en:         Английский
     ru:         Русский
-
-  parts_of_speech:  Части речи

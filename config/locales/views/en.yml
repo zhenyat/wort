@@ -1,4 +1,18 @@
 en:
+  header:
+    actions:        Actions
+    editing:        'Edit %{model}'
+    new:            'New %{model}'
+    view:           '%{model}'
+
+  button:
+    back:           To List
+    create:         Create 
+    delete:         Delete
+    edit:           Edit
+    save:           Save
+    show:           Show
+
   declination:  Declination
 
   hello:        Hello world!
@@ -8,5 +22,3 @@ en:
     de:         German
     en:         English
     ru:         Russian
-
-  parts_of_speech: Parts of Speech    # temporary (w/o model)

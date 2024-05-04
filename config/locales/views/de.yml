@@ -1,4 +1,18 @@
 de:
+  header:
+    actions:        Aktionen
+    editing:        'Edit %{model}'
+    new:            'Neues %{model}'
+    view:           '%{model}'
+
+  button:
+    back:           zur Liste
+    create:         Create 
+    delete:         Delete
+    edit:           Edit
+    save:           Save
+    show:           Show
+
   declination:  Deklination
   hello:        Hallo Welt!"
   home:         Heim
@@ -6,6 +20,4 @@ de:
     de:         Deutsch
     en:         Englisch
     ru:         Russisch
-
-  parts_of_speech: Teile der Rede
   

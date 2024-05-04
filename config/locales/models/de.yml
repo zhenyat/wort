@@ -40,15 +40,20 @@ de:
         other:    Possessivpronomen
 
       stem_vowel:
-        one:      Die Stammvokal
-        other:    Die Stammvokale
+        one:      Stammvokal
+        other:    Stammvokale
+
+      verb:
+        one:      Verb
+        other:    Verben
 
     attributes:
       article:
-        de:       Deutsch
+        de:           Deutsch
         kinds:
           definite:   Bestimmter Artikel
           indefinite: Unbestimmter Artikel
+
       case:
         de:       Deutsch
         en:       Englisch
@@ -101,3 +106,26 @@ de:
         scheme:   Scheme  
         assoc:    Verband  
         sample:   Beispiel
+
+      verb:
+        part_of_speech: Teil der Rede
+        stem_vowel:     Stammvokal
+        infinitive:     Infinitiv  
+        present:        Präsens  
+        past:           Präteritum
+        participle:     Partizip II  
+        trascription:   Transkription
+        en:             Englische Übersetzung
+        ru:             Russische Übersetzung
+        form:           Form
+        forms:
+          irregular:  Unregelmäßig Verb
+          regular:    Regelmäßiges Verb
+          modal:      Modalverb
+
+        auxiliary:    Hilfsverb
+        prefix:       Präfix
+        prefixes:
+          na:           Unzutreffend
+          inseparable:  Untrennbar
+          separable:    Trennbar

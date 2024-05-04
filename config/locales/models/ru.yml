@@ -17,6 +17,10 @@ ru:
         one:      Число
         other:    Числа
 
+      part_of_speech:
+        one:      Часть речи
+        other:    Части речи
+
       person:
         one:      Лицо
         other:    Лица
@@ -32,6 +36,10 @@ ru:
       stem_vowel:
         one:      Корневая гласная
         other:    Корневые гласные
+
+      verb:
+        one:      Глагол
+        other:    Глаголы
 
     attributes:
       article:
@@ -95,3 +103,27 @@ ru:
         scheme:   Схема 
         assoc:    Ассоциация
         sample:   Пример
+
+      verb:
+        part_of_speech: Часть речи
+        stem_vowel:     Корневая гласная
+        infinitive:   Инфинитив  
+        present:      Настоящее время 
+        past:         Прошедшее время
+        participle:   Причастие  
+        trascription: Транскрипция
+        en:           Английский перевод
+        ru:           Русский перевод
+        form:         Форма глагола
+        forms:
+          irregular:  Неправильный
+          regular:    Правильный
+          modal:      Модальный
+        auxiliary:    Вспомогательный глагол
+        auxiliaries:
+
+        prefix:       Приставка
+        prefixes:
+          na:           Нeприменимо
+          inseparable:  Отделяемая
+          separable:    Неотделяемая

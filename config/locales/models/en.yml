@@ -37,6 +37,10 @@ en:
         one:      Stem Vowel
         other:    Stem Vowels
 
+      verb:
+        one:      Verb
+        other:    Verbs
+
     attributes:
       article:
         de:           German
@@ -71,6 +75,10 @@ en:
         abbr_en:  English abbreviation
         abbr_ru:  Russian abbreviation
 
+      part_of_speech:
+        one:      Part of Speech
+        other:    Parts of Speech
+
       person:
         de:       German
         en:       English
@@ -96,3 +104,23 @@ en:
         rule:     Scheme  
         assoc:    Association  
         sample:   Sample
+
+      verb:
+        infinitive:   Infinitive  
+        present:      Present time  
+        past:         Past time
+        participle:   Participle  
+        trascription: Trascription
+        en:           English Translation
+        ru:           Russian Translation
+        form:         Form
+        forms:
+          irregular:  Irregular verb
+          regular:    Regular verb
+          modal:      Modal verb
+        auxiliary:    Auxiliary verb
+        prefix:       Prefix
+        prefixes:
+          na:           Inapplicable
+          inseparable:  Inseparable
+          separable:    Separable

@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  part_of_speech: one
+  stem_vowel: one
+  infinitive: MyString
+  present: MyString
+  past: MyString
+  participle: MyString
+  trascription: MyString
+  ru: MyString
+  en: MyString
+  form: 1
+  auxiliary: 1
+  prefix: 1
+
+two:
+  part_of_speech: two
+  stem_vowel: two
+  infinitive: MyString
+  present: MyString
+  past: MyString
+  participle: MyString
+  trascription: MyString
+  ru: MyString
+  en: MyString
+  form: 1
+  auxiliary: 1
+  prefix: 1

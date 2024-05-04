@@ -1,0 +1,67 @@
+<div id="<%= dom_id verb %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Part of speech:</strong>
+    <%= verb.part_of_speech[locale] %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Stem vowel:</strong>
+    <%= verb.stem_vowel.scheme %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Infinitive:</strong>
+    <%= verb.infinitive %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Present:</strong>
+    <%= verb.present %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Past:</strong>
+    <%= verb.past %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Participle:</strong>
+    <%= verb.participle %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Trascription:</strong>
+    <%= verb.trascription %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ru:</strong>
+    <%= verb.ru %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">En:</strong>
+    <%= verb.en %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Form:</strong>
+    <%= verb.form %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Auxiliary:</strong>
+    <%= verb.auxiliary %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Prefix:</strong>
+    <%= verb.prefix %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this verb", verb, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this verb", edit_verb_path(verb), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

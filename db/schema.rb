@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_03_171704) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_04_061711) do
   create_table "articles", force: :cascade do |t|
     t.integer "case_id", null: false
     t.integer "number_id", null: false
@@ -155,6 +155,25 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_03_171704) do
     t.index ["scheme"], name: "index_stem_vowels_on_scheme", unique: true
   end
 
+  create_table "verbs", force: :cascade do |t|
+    t.integer "part_of_speech_id", null: false
+    t.integer "stem_vowel_id", null: false
+    t.string "infinitive", null: false
+    t.string "present", null: false
+    t.string "past", null: false
+    t.string "participle", null: false
+    t.string "trascription"
+    t.string "ru", null: false
+    t.string "en", null: false
+    t.integer "form", limit: 1, default: 0, null: false
+    t.integer "auxiliary", limit: 1, default: 0, null: false
+    t.integer "prefix", limit: 1, default: 0, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["part_of_speech_id"], name: "index_verbs_on_part_of_speech_id"
+    t.index ["stem_vowel_id"], name: "index_verbs_on_stem_vowel_id"
+  end
+
   add_foreign_key "articles", "cases"
   add_foreign_key "articles", "genders"
   add_foreign_key "articles", "numbers"
@@ -165,4 +184,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_03_171704) do
   add_foreign_key "possessive_pronouns", "genders"
   add_foreign_key "possessive_pronouns", "numbers"
   add_foreign_key "possessive_pronouns", "personal_pronouns"
+  add_foreign_key "verbs", "parts_of_speech"
+  add_foreign_key "verbs", "stem_vowels"
 end

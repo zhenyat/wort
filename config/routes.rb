@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # scope "/:locale" do
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
     root 'home#index'
+    resources :verbs
     resources :stem_vowels, only: :index
     resources :possessive_pronouns, only: :index
     resources :personal_pronouns, only: :index

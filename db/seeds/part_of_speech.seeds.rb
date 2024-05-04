@@ -54,7 +54,7 @@ begin
           en: 'interrogative pronoun',
           ru: 'относительное местоимение' },
 
-        { de: 'verb',         en: 'Verb',         ru: 'глагол' },
+        { de: 'Verb',         en: 'verb',         ru: 'глагол' },
         { de: 'Adverb',       en: 'adverb',       ru: 'наречие' },
         { de: 'Präposition',  en: 'preposition',  ru: 'предлог' },
         { de: 'Konjuktion',   en: 'conjunction',  ru: 'союз' },
@@ -65,7 +65,7 @@ begin
     )
     puts "===== #{PartOfSpeech.count} 'Part Of Speech' record(s) created"
   else
-    puts "===== 'Part Of Speecht' seeding skipped"
+    puts "===== 'Part Of Speech' seeding skipped"
   end
 rescue StandardError
   puts '----- Achtung! Something went wrong...'
