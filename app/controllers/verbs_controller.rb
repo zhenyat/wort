@@ -13,9 +13,7 @@ class VerbsController < ApplicationController
   # GET /verbs/new
   def new
     @verb = Verb.new
-    @parts_of_speech = PartOfSpeech.all
-    @verb.part_of_speech_id = PartOfSpeech.find_by(en: 'verb').id
-    @stem_vowels = StemVowel.all
+    verb_associations
   end
 
   # GET /verbs/1/edit
@@ -64,6 +62,13 @@ class VerbsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_verb
       @verb = Verb.find(params[:id])
+      verb_associations
+    end
+
+    def verb_associations
+      @parts_of_speech = PartOfSpeech.all
+      @verb.part_of_speech_id = PartOfSpeech.find_by(en: 'verb').id
+      @stem_vowels = StemVowel.all
     end
 
     # Only allow a list of trusted parameters through.
